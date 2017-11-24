@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:paddingTop="50dp"
+    android:paddingLeft="20dp"
+    tools:context="com.example.priya.sharedpreferencesaveretrive.MainActivity">
+
+
+    <TextView
+
+        android:id="@+id/textname"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Name:"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:layout_alignParentLeft="true"/>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/editname"
+        android:inputType="text"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:layout_below="@+id/textname"/>
+
+    <TextView
+
+        android:id="@+id/textphone"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Phone Number:"
+        android:layout_below="@id/editname"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:layout_alignParentLeft="true"/>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/editphone"
+        android:inputType="number"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:layout_below="@+id/textphone"/>
+
+    <TextView
+
+        android:id="@+id/textage"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Age:"
+        android:layout_below="@id/editphone"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:layout_alignParentLeft="true"/>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/editage"
+        android:inputType="number"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:layout_below="@+id/textage"/>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/save"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:onClick="save"
+        android:text="Save"
+        android:layout_below="@id/editage"/>
+
+    <Button
+        android:id="@+id/display"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="display"
+        android:text="Show"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:layout_below="@id/save"
+        />
+
+
+
+
+</RelativeLayout>
